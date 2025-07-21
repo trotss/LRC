@@ -1,5 +1,5 @@
 # Prueba de Concepto (PoC) de Código LRC [6,4,2]
-Este repositorio contiene una Prueba de Concepto (PoC) de un código de paridad localmente recuperable (LRC) con parámetros [6,4,2]. El objetivo principal de esta PoC es evaluar el rendimiento en términos de tiempos de codificación, decodificación y recuperación para diferentes escenarios de fallos de shards (fragmentos de datos).
+Este repositorio contiene una Prueba de Concepto (PoC) de un código de paridad localmente recuperable (LRC) con parámetros [6,4,2]. El objetivo principal de esta PoC es evaluar el rendimiento en términos de tiempos de codificación, decodificación y recuperación para diferentes escenarios de fallos de shards (fragmentos de datos). Esta técnica se utiliza en los sistemas de almacenamiento masivo, donde cada fragmento se guarda en ubicaciones físicas diferentes en caso de pérdida. Existe una base de álgebra básica para comprender el funcionamiento del código.
 
 ---
 ## Descripción del Código LRC [6,4,2]
@@ -20,4 +20,9 @@ Tiempo de Decodificación: El tiempo que se requiere para reconstruir los 4 shar
 Tiempo de Recuperación de 1 Shard: El tiempo para recuperar un único shard de datos perdido utilizando la paridad local o global.
 Tiempo de Recuperación de 2 Shards: El tiempo para recuperar dos shards de datos perdidos, demostrando la capacidad del código para manejar múltiples fallos.
 
+La evaluación de tiempos en función del tamaño del archivo demuestra la complegidad lineal del código.
+
+---
+
 No hay requeriments.txt, gestiónatelo.
+Normalmente t.codificación > t.decodificación.
